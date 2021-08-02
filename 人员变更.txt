@@ -2,3 +2,4 @@
     <div class="head">
         <img src="../static/img/back_black.png" onclick="changeDetailFuncs.back()" alt="">成员变更
 1111111111111111
+2222222222222222
