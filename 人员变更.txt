@@ -1,0 +1,153 @@
+<div class="detail-container">
+    <div class="head">
+        <img src="../static/img/back_black.png" onclick="changeDetailFuncs.back()" alt="">成员变更
+    </div>
+    <div class="project">
+        <div class="company" id="projectName">测试周报上下周</div>
+        <div class="content">
+            <div class="column">
+                <div class="num" id="amount">656.00</div>
+                <div class="font">融资总金额</div>
+            </div>
+            <div class="column">
+                <div class="num" id="financeTerm">8</div>
+                <div class="font">融资期限</div>
+            </div>
+            <div class="column">
+                <div class="num" id="comprehensiveCost">8.00</div>
+                <div class="font">综合成本</div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="addressCompleteUrl">安徽省,合肥市,瑶海区</div>
+            <div style="color: #666666;" id="stage">合同签约</div>
+        </div>
+    </div>
+    <div class="person">
+        <div class="row">
+            <div class="title">
+                项目经理
+            </div>
+            <span style="display: none">1</span>
+            <div class="content" id="projectManager">
+                <div class="column"> <div class="name">赵亮</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">王欢</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">赵亮</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">王欢</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">赵亮</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">王欢</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">赵亮</div></div><div class="change" id="projectManagerRecordContent">变更</div>
+                <div class="img">
+                    <img class="displayInput" src="../static/img/weekly/addMem.png" alt="">
+                    <img class="hideInput" style="display: none" src="../static/img/weekly/close.png" alt="">
+                </div>
+            </div>
+            <div class="reason" style="display:none" id="projectManagerChangeContent">
+                <div class="date">
+                    <div style="color: #333333;">变更人名称</div>
+                    <div><input id="projectManagerName" onclick="changeDetailFuncs.chooseMem()" readonly="true" type="text" value="" placeholder="请选择变更人"></div>
+                </div>
+                <div class="date">
+                    <div style="color: #333333;">变更日期</div>
+                    <div><input id="projectManagerChangeDate" readonly="readonly" type="text" value="2021-08-02" placeholder="请选择变更日期"></div>
+                </div>
+                <div class="change">
+                    <div style="color: #333333;height: 40px;line-height: 40px;">变更理由</div>
+                    <div class="area">
+                        <textarea class="input" id="projectManagerChangeReason" onpropertychange="if(value.length>50) value=value.substr(0,50)" oninput="leg(this);" name="" maxlength="50" cols="30" rows="10" placeholder="请填写变更理由"></textarea>
+                        <div class="word"><span class="count">0</span>&nbsp;/&nbsp;<span class="num_count" id="numCount">50</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="title">
+                项目总监
+            </div>
+            <span style="display: none">2</span>
+            <div class="content" id="projectChief">
+                <div class="column"> <div class="name">erw...</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">eee</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">赵亮</div></div><div class="change" id="projectChiefRecordContent">变更</div>
+                <div class="img">
+                    <img class="displayInput" src="../static/img/weekly/addMem.png" alt="">
+                    <img class="hideInput" style="display: none" src="../static/img/weekly/close.png" alt="">
+                </div>
+            </div>
+            <div class="reason" style="display:none" id="projectChiefChangeContent">
+                <div class="date">
+                    <div style="color: #333333;">变更人名称</div>
+                    <div><input id="projectChiefName" type="text" value="" placeholder="请输入变更人名称"></div>
+                </div>
+                <div class="date">
+                    <div style="color: #333333;">变更日期</div>
+                    <div><input id="projectChiefChangeDate" readonly="readonly" type="text" value="2021-08-02" placeholder="请选择变更日期"></div>
+                </div>
+                <div class="change">
+                    <div style="color: #333333;height: 40px;line-height: 40px;">变更理由</div>
+                    <div class="area">
+                        <textarea class="input" id="projectChiefChangeReason" onpropertychange="if(value.length>50) value=value.substr(0,50)" oninput="leg(this);" name="" maxlength="50" cols="30" rows="10" placeholder="请填写变更理由"></textarea>
+                        <div class="word"><span class="count">0</span>&nbsp;/&nbsp;<span class="num_count" id="numCount">50</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="title">
+                产品经理
+            </div>
+            <span style="display: none">3</span>
+            <div class="content" id="productManager">
+                <div class="column"> <div class="name">测试1</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">ttt</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">赵亮</div></div><div style="font-weight: 700;margin: 0 5px;margin-top: 15px;">...</div><div class="column"> <div class="name">123...</div></div><div class="change" id="productManagerRecordContent">变更</div>
+                <div class="img">
+                    <img class="displayInput" src="../static/img/weekly/addMem.png" alt="">
+                    <img class="hideInput" style="display: none" src="../static/img/weekly/close.png" alt="">
+                </div>
+            </div>
+            <div class="reason" style="display:none" id="productManagerChangeContent">
+                <div class="date">
+                    <div style="color: #333333;">变更人名称</div>
+                    <div><input id="productManagerName" type="text" value="" placeholder="请输入变更人名称"></div>
+                </div>
+                <div class="date">
+                    <div style="color: #333333;">变更日期</div>
+                    <div><input id="productManagerChangeDate" readonly="readonly" type="text" value="2021-08-02" placeholder="请选择变更日期"></div>
+                </div>
+                <div class="change">
+                    <div style="color: #333333;height: 40px;line-height: 40px;">变更理由</div>
+                    <div class="area">
+                        <textarea class="input" id="productManagerChangeReason" onpropertychange="if(value.length>50) value=value.substr(0,50)" oninput="leg(this);" name="" maxlength="50" cols="30" rows="10" placeholder="请填写变更理由"></textarea>
+                        <div class="word"><span class="count">0</span>&nbsp;/&nbsp;<span class="num_count" id="numCount">50</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="title">
+                公关经理
+            </div>
+            <span style="display: none">4</span>
+            <div class="content" id="publicManager">
+                <div class="column"> <div class="name">赵亮</div></div><div class="change" id="publicManagerRecordContent">变更</div>
+                <div class="img">
+                    <img class="displayInput" src="../static/img/weekly/addMem.png" alt="">
+                    <img class="hideInput" style="display: none" src="../static/img/weekly/close.png" alt="">
+                </div>
+            </div>
+            <div class="reason" style="display:none" id="publicManagerChangeContent">
+                <div class="date">
+                    <div style="color: #333333;">变更人名称</div>
+                    <div><input id="publicManagerName" type="text" value="" placeholder="请输入变更人名称"></div>
+                </div>
+                <div class="date">
+                    <div style="color: #333333;">变更日期</div>
+                    <div><input id="publicManagerChangeDate" readonly="readonly" type="text" value="2021-08-02" placeholder="请选择变更日期"></div>
+                </div>
+                <div class="change">
+                    <div style="color: #333333;height: 40px;line-height: 40px;">变更理由</div>
+                    <div class="area">
+                        <textarea class="input" id="publicManagerChangeReason" onpropertychange="if(value.length>50) value=value.substr(0,50)" oninput="leg(this);" name="" maxlength="50" cols="30" rows="10" placeholder="请填写变更理由"></textarea>
+                        <div class="word"><span class="count">0</span>&nbsp;/&nbsp;<span class="num_count" id="numCount">50</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="submit" onclick="changeDetailFuncs.saveMMRecord()">
+        <div>提交</div>
+    </div>
+</div>
